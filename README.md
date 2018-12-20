@@ -1,8 +1,3 @@
 # recipeapp
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+UI template for a Recipe App using Flutter. Inspiration from [this awesome dribbble](https://dribbble.com/shots/5299031-Recipe-Sharing-Food-Channel). Recipes used for tempalte taken from [BBC Good Food](https://www.bbcgoodfood.com/).
