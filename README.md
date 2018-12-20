@@ -6,4 +6,4 @@ Inspiration from [this awesome dribbble](https://dribbble.com/shots/5299031-Reci
 
 ![](recipedemo.gif)
 
-Recipes used for tempalte taken from [Delish](https://www.delish.com/).
+Recipes used for template taken from [Delish](https://www.delish.com/).
