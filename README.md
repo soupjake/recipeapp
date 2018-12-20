@@ -1,6 +1,6 @@
 # RecipeApp
 
-UI template for a Recipe App using Flutter. 
+Recipe App UI template using Flutter.
 
 Inspiration from [this awesome dribbble](https://dribbble.com/shots/5299031-Recipe-Sharing-Food-Channel). 
 
