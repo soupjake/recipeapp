@@ -164,7 +164,9 @@ class HomePageState extends State<HomePage> {
                       },
                     ))),
                 Spacer(),
-                Flexible(
+                
+                Container(
+                  height: MediaQuery.of(context).size.height / 4.5,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: RecipeViewModel.recipes.length,
@@ -376,15 +378,17 @@ class HomePageState extends State<HomePage> {
           child: frostedEdged(Container(
               width: MediaQuery.of(context).size.width / 1.75,
               color: Colors.white.withOpacity(0.3),
-              child: Row(children: <Widget>[
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
                 Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Container(
-                              width: 90.0,
-                              height: 90.0,
+                              width: MediaQuery.of(context).size.width / 5,
+                              height: MediaQuery.of(context).size.width / 5,
                               decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   image: DecorationImage(
@@ -393,16 +397,13 @@ class HomePageState extends State<HomePage> {
                                           RecipeViewModel
                                               .recipes[index].image)))),
                         ])),
-                Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Column(
+                Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Container(
                               width:
-                                  (MediaQuery.of(context).size.width / 1.75) -
-                                      132.0,
+                                  (MediaQuery.of(context).size.width / 3.5),
                               child: Text(RecipeViewModel.recipes[index].title,
                                   softWrap: true,
                                   maxLines: 2,
@@ -452,7 +453,7 @@ class HomePageState extends State<HomePage> {
                                   )),
                             ],
                           )
-                        ]))
+                        ])
               ])))),
       onTap: () {
         setState(() {
